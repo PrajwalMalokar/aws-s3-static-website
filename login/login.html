@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Registration Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <!-- Login Form -->
+      <form id="loginForm" class="form">
+        <h2>Login</h2>
+        <div class="input-group">
+          <label for="loginUsername">Username:</label>
+          <input type="text" id="loginUsername" name="loginUsername" required>
+        </div>
+        <div class="input-group">
+          <label for="loginPassword">Password:</label>
+          <input type="password" id="loginPassword" name="loginPassword" required>
+        </div>
+        <button type="submit">Login</button>
+        <p>New user? <a href="#" id="signupLink">Sign up here</a></p>
+        <div class="error-message" id="loginErrorMessage"></div>
+      </form>
+
+      <!-- Registration Form (Initially Hidden) -->
+      <form id="registerForm" class="form" style="display:none;">
+        <h2>Register</h2>
+        <div class="input-group">
+          <label for="regUsername">Username:</label>
+          <input type="text" id="regUsername" name="regUsername" required>
+        </div>
+        <div class="input-group">
+          <label for="regEmail">Email:</label>
+          <input type="email" id="regEmail" name="regEmail" required>
+        </div>
+        <div class="input-group">
+          <label for="regPassword">Password:</label>
+          <input type="password" id="regPassword" name="regPassword" required>
+        </div>
+        <div class="input-group">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </div>
+        <button type="submit">Register</button>
+        <p>Already have an account? <a href="#" id="loginLink">Log in here</a></p>
+        <div class="error-message" id="registerErrorMessage"></div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

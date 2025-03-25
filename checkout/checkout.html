@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Fooder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Logo.png" alt="Fooder Logo">
+        </div>
+        <ul>
+            <li class="item"><a href="../index.html">Home</a></li>
+            <li class="item"><a href="../index.html#menu">Menu</a></li>
+            <li class="item"><a href="checkout.html">Checkout</a></li>
+            <li class="item"><a href="../login/login.html">Login/Signup</a></li>
+            <li class="item"><a href="checkout.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <section id="checkout">
+        <h1 class="h-primary center">Checkout</h1>
+        <div id="checkout-container">
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <p class="center"><strong>Total Amount: Rs.<span id="cart-total">0.00</span></strong></p>
+            <button class="btn" onclick="placeOrder()">Place Order</button>
+        </div>
+    </section>
+    <section id="order-success" style="display: none;">
+        <h1 class="h-primary center">Order Placed Successfully!</h1>
+        <div id="invoice">
+            <h2>Invoice</h2>
+            <p><strong>Name:</strong> <span id="purchaser-name">John Doe</span></p>
+            <p><strong>Email:</strong> <span id="purchaser-email">johndoe@gmail.com</span></p>
+            <p><strong>Phone:</strong> <span id="purchaser-phone">1234567890</span></p>
+            
+            <h3>Ordered Items:</h3>
+            <ul id="order-items">
+                <!-- Items will be dynamically inserted here -->
+            </ul>
+    
+            <p><strong>Total Amount:</strong> <span id="total-amount">Rs.0.00</span></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Download our app</h3>
+                <p>Order your favorite food on the go!</p>
+                <div class="app-links">
+                    <a href="#"><img src="app-store.png" alt="App Store"></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Join Affiliate</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2024 Fooder.com</p>
+        </div>
+    </footer> 
+
+    <script src="script.js"></script>
+</body>
+
+</html>

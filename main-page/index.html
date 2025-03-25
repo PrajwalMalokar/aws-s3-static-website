@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODER-Fresh,Fast and Delicious!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px )" href="phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nanum+Brush+Script&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Darker+Grotesque:wght@500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Darker+Grotesque:wght@500&family=Happy+Monkey&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Logo.png" alt="">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#menu">Special Offers</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+            <li class="item"><a href="./login/login.html">Login/Signup</a></li>
+            <li class="item"><a href="./checkout/checkout.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to Prajwal's Online Meal</h1>
+        <p>Explore a wide variety of delicious meals, all at your fingertips! Freshly prepared and delivered fast.</p>
+        <p>Order your favorite dishes with ease and enjoy the taste of homemade food without the hassle of cooking.</p>
+        <button class="btn">Order Now!</button>
+    </section>
+    <section id="services-container">
+        <h1 id="h1" class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img1.jpg" alt="">
+                <h2 class="secondary center">Food Catering</h2>
+                <p class="center">We offer exceptional catering services for events of any size. Whether it's a corporate event, wedding, or birthday party, our food will leave a lasting impression.</p>
+            </div>
+            <div class="box">
+                <img src="bg5.jpg" alt="">
+                <h2 class="secondary center">Bulk Ordering</h2>
+                <p class="center">Need to feed a large group? Our bulk ordering service makes it easy to order large quantities of your favorite meals at discounted rates.</p>
+            </div>
+            <div class="box">
+                <img src="bg6.jpg" alt="">
+                <h2 class="secondary center">Food Ordering</h2>
+                <p class="center">Order from our diverse menu of fresh, fast, and delicious meals. Whether you're craving pizza, burgers, or healthy options, we've got you covered.</p>
+            </div>
+        </div>
+    </section>
+    <section id="menu">
+        <h1 class="h-primary center">Our Menu</h1>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="pizza.jpg" alt="Pepperoni Pizza">
+                <h2>Pepperoni Pizza</h2>
+                <p>Rs.149</p>
+                <button onclick="addToCart('Pepperoni Pizza', 149)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="burger.jpg" alt="Veggie Delight Burger">
+                <h2>Veggie Delight Burger</h2>
+                <p>Rs.99</p>
+                <button onclick="addToCart('Veggie Delight Burger', 99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="Creamy Alfredo Pasta.jpg" alt="Creamy Alfredo Pasta">
+                <h2>Creamy Alfredo Pasta</h2>
+                <p>Rs.199</p>
+                <button onclick="addToCart('Creamy Alfredo Pasta', 199)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="Chicken Shawarma Roll.avif" alt="Chicken Shawarma Roll">
+                <h2>Chicken Shawarma Roll</h2>
+                <p>Rs.129</p>
+                <button onclick="addToCart('Chicken Shawarma Roll', 129)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="Mozzarella Sticks.jpg" alt="Mozzarella Sticks">
+                <h2>Mozzarella Sticks</h2>
+                <p>Rs.129</p>
+                <button onclick="addToCart('Mozzarella Sticks', 129)">Add to Cart</button>
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+    </section>
+    
+    <section id="client-section">
+        <h1 id="h11" class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="swiggy-logo.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="zomato.jpg" alt="">
+            </div>
+            <div class="client-item">
+                <img src="Microsoft.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="telegram.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="instagram.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone No.</label>
+                    <input type="phone" name="phone" id="phone" placeholder="Enter your Phone No.">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="Message">Message</label>
+                    <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+            </form>
+        </div>       
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Download our App Section -->
+            <div class="footer-column">
+                <h3>Download our app</h3>
+                <p>Order your favorite food on the go!</p>
+                <div class="app-links">
+                    <a href="#"><img src="app-store.png" alt="App Store"></a>
+                </div>
+            </div>
+
+            <!-- Useful Links Section -->
+            <div class="footer-column">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Join Affiliate</a></li>
+                </ul>
+            </div>
+
+            <!-- Follow Us Section -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2024 Foodier.com</p>
+        </div>
+    </footer>
+    </section>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
