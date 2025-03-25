@@ -49,11 +49,12 @@ aws-s3-static-website/
 │   ├── telegram.png
 │   ├── zomato.jpg
 │
-│── main.tf                     # Terraform main configuration
+│── main.tf                      # Terraform main configuration
 │── variables.tf                 # Variables for Terraform
 │── outputs.tf                   # Outputs for Terraform
-│── .gitignore                    # Git ignore file for Terraform
-│── README.md                     # Project documentation
+│── provider.tf                  # Configure the AWS provider for Terraform
+│── .gitignore                   # Git ignore file for Terraform
+│── README.md                    # Project documentation
 
 ```
 
