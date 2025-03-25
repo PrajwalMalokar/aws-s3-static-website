@@ -5,7 +5,7 @@ This project demonstrates how to deploy a static website on **AWS S3** using **T
 
 ## **📂 Project Structure**
 ```
-my-project/
+aws-s3-static-website/
 │── checkout/                  # Checkout page assets
 │   ├── app-store.png
 │   ├── bg1.jpg
